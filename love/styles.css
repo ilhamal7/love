@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    background: #000;
+/* Agar konten bisa menyesuaikan ukuran layar */
+#loveText {
+    font-size: 3em; /* Ukuran font default */
+    color: white; /* Warna teks */
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    #loveText {
+        font-size: 2em; /* Lebih kecil di mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    #loveText {
+        font-size: 2em; /* Lebih kecil lagi untuk layar sangat kecil */
+    }
+}
+ /* penting! biar di belakang canvas */
+}
+
